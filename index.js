@@ -9,7 +9,8 @@ import {
 
 const appSettings = {
   // databaseURL: process.env.FIREBASE_DATABASE_URL || "YOUR_FIREBASE_DATABASE_URL",
-  databaseURL: "https://pin-board-28693-default-rtdb.europe-west1.firebasedatabase.app/pinBoard"
+  databaseURL:
+    "https://pin-board-28693-default-rtdb.europe-west1.firebasedatabase.app/",
 };
 
 const app = initializeApp(appSettings);
