@@ -8,7 +8,6 @@ import {
 } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js";
 
 const appSettings = {
-  // databaseURL: process.env.FIREBASE_DATABASE_URL || "YOUR_FIREBASE_DATABASE_URL",
   databaseURL:
     "https://pin-board-28693-default-rtdb.europe-west1.firebasedatabase.app/",
 };
