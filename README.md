@@ -40,7 +40,7 @@ To use this application with your own Firebase database:
 
 ```javascript
 const appSettings = {
-  databaseURL: "YOUR_FIREBASE_DATABASE_URL",
+  databaseURL: process.env.FIREBASE_DATABASE_URL || "YOUR_FIREBASE_DATABASE_URL",
 };
 ```
 
