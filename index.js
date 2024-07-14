@@ -8,8 +8,7 @@ import {
 } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js";
 
 const appSettings = {
-  databaseURL:
-    "YOUR_FIREBASE_DATABASE_URL",
+  databaseURL: process.env.FIREBASE_DATABASE_URL || "YOUR_FIREBASE_DATABASE_URL",
 };
 
 const app = initializeApp(appSettings);
