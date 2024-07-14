@@ -2,7 +2,8 @@
 
 ## Project Description
 
-This project is a simple "Pin Board" application created with the aim of practicing working with Firebase database. The application allows users to add, view, and delete "pins" (short text notes) in real-time.
+This project is a simple "Pin Board" application created with the aim of practicing working with Firebase database. The application allows users to add, view, and delete "pins" (short text notes) in real-time.  
+
 You can access the live version of the project [here](https://nastenka.netlify.app/).
 
 ## Features
