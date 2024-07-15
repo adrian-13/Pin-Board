@@ -21,10 +21,29 @@
         placeholder="Napíš niečo na nástenku..."
       ></textarea>
       <button id="send-btn">Odoslať</button>
-      <img src="./assets/pin.png" alt="pin" id="pin" />
+      <img src="./assets/pin.png" alt="pin" id="pin-img" />
       <ul id="pin-list"></ul>
     </div>
 
+    <div id="name-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Zadaj svoje meno</h2>
+        <input type="text" id="name-input" placeholder="Jožko" />
+        <button id="submit-name-btn">Potvrdiť</button>
+      </div>
+    </div>
+    
+    <div id="delete-pin-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Chceš zmazať pin?</h2>
+        <button id="delete-pin-btn">Zmazať</button>
+      </div>
+    </div>
+
     <script src="index.js" type="module"></script>
+    <script src="modalWindow.js" type="module"></script>
+    <script src="deletePin.js" type="module"></script>
   </body>
 </html>
