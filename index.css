@@ -28,7 +28,7 @@ h1 {
 
 textarea {
   height: 200px;
-  width: 100%; 
+  width: 100%;
   color: #ffffff;
   background-color: #1e2d4b;
   border: 0;
@@ -38,8 +38,8 @@ textarea {
   font-size: 15px;
   font-family: "Rubik", sans-serif;
   margin: 0px 0;
-  resize: none; 
-  box-sizing: border-box; 
+  resize: none;
+  box-sizing: border-box;
 }
 
 textarea:focus {
@@ -113,7 +113,7 @@ ul#pin-list li {
   margin-bottom: 5px;
   word-wrap: break-word;
   white-space: pre-wrap;
-  overflow-wrap: break-word; 
+  overflow-wrap: break-word;
 }
 
 .pin-author {
@@ -124,7 +124,7 @@ ul#pin-list li {
 
 /* <--- Modal window ---> */
 .modal {
-  display: none; 
+  display: none;
   position: fixed;
   z-index: 1000;
   left: 0;
@@ -138,19 +138,19 @@ ul#pin-list li {
 
 .modal-content {
   background-color: #fefefe;
-  padding: 20px;
+  padding: 10px;
   border: 1px solid #888;
-  width: 90%;
-  max-width: 320px;
+  width: 100%;
+  max-width: 300px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  border-radius: 8px;
+  border-radius: 16px;
   text-align: center;
 }
 
 .close-btn {
   color: #aaa;
   float: right;
-  font-size: 28px;
+  font-size: 30px;
   font-weight: bold;
   cursor: pointer;
 }
@@ -194,9 +194,11 @@ ul#pin-list li {
 #delete-pin-btn {
   background-color: rgb(255, 34, 34);
   color: #ffffff;
+  padding: 10px;
 }
 
 #delete-pin-btn:hover {
   background-color: rgb(255, 255, 255);
   color: rgb(255, 34, 34);
+  outline: 1px solid rgb(255, 34, 34);
 }
