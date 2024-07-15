@@ -2,7 +2,7 @@
 
 ## Project Description
 
-This project is a simple "Pin Board" application created with the aim of practicing working with Firebase database. The application allows users to add, view, and delete "pins" (short text notes) in real-time.  
+This project is a simple "Pin Board" application created with the aim of practicing working with Firebase database. The application allows users to add, view, and delete "pins" (short text notes) in real-time.
 
 You can access the live version of the project [here](https://nastenka.netlify.app/).
 
@@ -10,8 +10,10 @@ You can access the live version of the project [here](https://nastenka.netlify.a
 
 - Adding new pins
 - Displaying existing pins in real-time
-- Deleting pins by clicking
+- Deleting pins by double-clicking on them
 - Utilizing Firebase Realtime Database for data storage and synchronization
+- User name submission with UUID generation for unique identification
+- Modal windows for user name submission and pin deletion confirmation
 
 ## Technologies
 
@@ -23,6 +25,7 @@ You can access the live version of the project [here](https://nastenka.netlify.a
 ## Installation and Running
 
 1. Clone this repository:
+
    ```
    git clone https://github.com/your-username/pin-board-project.git
    ```
@@ -42,7 +45,7 @@ To use this application with your own Firebase database:
 
 ```javascript
 const appSettings = {
-  databaseURL: process.env.FIREBASE_DATABASE_URL || "YOUR_FIREBASE_DATABASE_URL",
+databaseURL: "YOUR_FIREBASE_DATABASE_URL",
 };
 ```
 
