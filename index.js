@@ -104,7 +104,7 @@ function appendItemToPinBoard(item) {
     }
   });
 
-  pinListEl.append(newEl);
+  pinListEl.prepend(newEl);
 
   if (itemAuthor === localStorage.getItem("userName")) {
     authorEl.style.textAlign = "right";
