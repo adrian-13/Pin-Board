@@ -34,7 +34,7 @@ sendBtn.addEventListener("click", function () {
 
 submitNameBtn.addEventListener("click", function () {
   const userName = nameInput.value.trim();
-  const userUUID = generateUUID();
+  const userUUID = getUserUUID();
   console.log(userUUID);
   if (userName) {
     localStorage.setItem("userName", userName);
@@ -95,7 +95,7 @@ function appendItemToPinBoard(item) {
 
   newEl.addEventListener("dblclick", function () {
     let exactLocationOfItemInDB = ref(database, `pinBoard/${itemID}`);
-    if (itemAuthor !== authorEl.value) {
+    if (itemAuthor === localStorage.getItem("userName")) {
       openDeletePinModal();
       deletePinBtn.addEventListener("click", function () {
         remove(exactLocationOfItemInDB);
@@ -118,7 +118,8 @@ function clearPinBoard() {
 function getUserUUID() {
   let userName = localStorage.getItem("userName");
   let userUuid = localStorage.getItem("userUUID");
-  if (!userName || !userUuid) {
+  if (!userName || !userUuid || userUuid == null) {
+    userUuid = generateUUID();
     openModal();
   }
   return userName && userUuid;
